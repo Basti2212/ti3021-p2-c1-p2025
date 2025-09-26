@@ -3,11 +3,9 @@ class Cliente:
         self.__nombre: str = nombre
         self.__rut: str = rut
         self.__edad: int = edad
+    def __str__(self):
+        return f"{self.__nombre} {self.__rut} {self.__edad}"
 
-Cliente1: Cliente = Cliente(
-    nombre: "Felipe Villarroel",
-    rut: "21789567-K",
-    edad: "21"
-)
+cliente1: Cliente = Cliente(nombre = "Felipe Villarroel", rut = "21789567-K", edad = 21)
 
-print(Cliente1)
+print(cliente1)
